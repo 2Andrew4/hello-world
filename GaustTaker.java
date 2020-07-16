@@ -40,7 +40,7 @@ public class GaustTaker extends Object {
 	
 	 while (ergebnis==2);
 	
-	System.out.println("while incremented integer is furthermore true!");
+	System.out.println("Hello World! e.g. incremented or decremented anythink");
 		
 	} 
 }
