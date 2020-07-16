@@ -1,0 +1,46 @@
+/** 
+* used for one sign input
+* ascii-table from highest 255 to 032 whitespace with gaust-summary for the numbervalue
+* computed also unicode-cases for character
+* by me Andreas Bahr
+* website@luna-net,org
+**/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+public class GaustTaker extends Object {
+	public static double n, used;
+
+
+		public static void main (String [] args)
+	{  
+		try {
+		BufferedReader infile = new BufferedReader (new InputStreamReader (System.in));
+          System.out.println ("One character from ascii-table for computing please");
+	
+					used = infile.read(); // a single character = 16 bits
+		n = used;			
+		}
+		 //  catch(Exception e){
+	     //  e.printStackTrace(); }
+	         catch(IOException ioe) {
+		  System.out.println ("since "+ioe);}			
+		
+		double ergebnis = 0;
+		double op = 1;		
+		for (ergebnis=ergebnis+op; ergebnis>=n; ergebnis++) // increment integer 16 b case converted for double
+	{
+	ergebnis++;	// to 1
+	}
+
+	 do ergebnis=((n+ergebnis)*(n/2));
+	 while (ergebnis==1);
+	
+	System.out.println("integer with double-worthy " +n+ " computed " + ergebnis+ " ascii-table worthy with gaust-loop in higher comming for your input");
+	
+	 while (ergebnis==2);
+	
+	System.out.println("while incremented integer is furthermore true!");
+		
+	} 
+}
