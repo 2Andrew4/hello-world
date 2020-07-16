@@ -36,8 +36,17 @@ public class GaustTaker extends Object {
 	 do ergebnis=((n+ergebnis)*(n/2));
 	 while (ergebnis==1);
 	
-	System.out.println("integer with double-worthy " +n+ " computed " + ergebnis+ " ascii-table worthy with gaust-loop in higher comming for your input");
-	
+		if ( n <= 256) {
+	System.out.println(" ascii table.nr. " +n+ " computed " + ergebnis);
+	}
+	if ( n >= 255 && n <= 260) {
+	System.out.println(" one of four to complete " +n+ " computed " + ergebnis);
+	}
+	if ( n >= 260) {
+	System.out.println("Out of range from ascii-table");
+	System.out.println("integer with double-worthy "+n+" computed " + ergebnis+ " ascii-table worthy with gaust-loop in higher comming for your input");	
+	}
+	// synchronized void dialogQuest
 	 while (ergebnis==2);
 	
 	System.out.println("Hello World! e.g. incremented or decremented anythink");
