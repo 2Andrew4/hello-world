@@ -9,20 +9,75 @@
 function sgns() {
 	
 var inv = "%DC"													// Ü
+var invl = "%FC"													// ü
 var inv1 = "%3a"												// :
 var inv2 ="%20%E2%80%93%20"										// spacehyphenspace
 var inv3 ="%20"													// space
 var inv4 ="%E2%80%93"											// –
-var inv5 ="%C4"													// Ä	 
+var inv5 ="%C4"													// Ä
+var inv5l ="%E4"												// ä	 
 var inv6 ="%22"													// "
 var inv7 ="%2C"													// ,
 var inv8 ="%21"													// !
+var inv9 ="%3C"													// <
+var inv10 ="%3E"													// >
+var inv11 ="%28"													// (
+var inv12 ="%29"													// )
+var inv13 ="%26"													// &
+var inv14 ="%25"													// %
+var inv15 ="%5B"													// [
+var inv16 ="%5D"													// ]
+var inv17 ="%7B"													// {
+var inv18 ="%7D"													// }
+var inv19 ="%7E"													// ~
+var inv20 ="%E6"													// æ
+var inv21 ="%27"													// '
+var inv22 ="%C2"													// Â
+var inv23 ="%AC"													// ¬
+var inv24 ="%BD"													// ½
+var inv25 ="%BC"													// ¼
+var inv26 ="%B3"													//  ³
+var inv27 ="%B2"													//  ²
+var inv28="%DF"													//  ß
+var inv29="%3F"													//  ?
+var inv30="%3D"													//  =
+var inv31="%60"													//  `
+var inv32="%B4"													//  ´
+var inv33="%24"													// $ Dollar
+var inv34="%A7"													// § paragraph
+var inv35="%5E"													// ^
+var inv36="%5Cn"													// \n
+var inv37="%0A"													// also found under  \n once
+var inv38="%B0"													// ° degree
+var inv39="%E8"													// è grave
+var inv40="%A3"													// £
+var inv41="%E9"													// é accute
+var inv42="%E2"													// â circumflex
+var inv43="%EA"													// ê circumflex
+var inv44="%F4"													// ô circumflex
+var inv45="%A9"													// ©
+var inv46="%23"													// #
+var inv47="%5Ct"												// \t
+var inv48="%5Cr"												// \r
+var inv49="%D6"												    // Ö
+var inv49l="%F6"												// ö
+var inv50="%3B"												    // ;
+var inv51="%A2"												    // ¢
+var inv52="%B5"												    // µ
+var inv53="%F0"												    // ð
+var inv54="%B6"												    // ¶
+var inv55="%F8"												    // ø
+var inv56="%FE"												    // þ
 // db end -> we can fill it since now with the 
 // solutions from input in browser-panel (udate: but also this dyn-preorders to set)
+// so long increment inv++ not auto added about nice loops
 var all = document.fm.inp.value;
 
 if (all == inv) {
 	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv+'<br> Ü </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == invl) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+invl+'<br> ü </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
 	}
 if (all == inv1) {
 	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv1+'<br> : </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
@@ -40,6 +95,9 @@ if (all == inv4) {
 if (all == inv5) {
 	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv5+'<br> Ä </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
 	}
+	if (all == inv5l) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv5l+'<br> ä </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
 if (all == inv6) {
 	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv6+'<br> " </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
 	}
@@ -48,6 +106,155 @@ if (all == inv7) {
 	}
 if (all == inv8) {
 	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv8+'<br> ! </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv9) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv9+'<br> < </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv10) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv10+'<br> > </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv11) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv11+'<br> ( </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv12) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv12+'<br> ) </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv13) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv13+'<br> & </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv14) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv14+'<br> % </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv15) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv15+'<br> [ </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv16) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv16+'<br> ] </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv17) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv17+'<br> { </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv18) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv18+'<br> }</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv19) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv19+'<br> ~</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv20) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv20+'<br> æ</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv21) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv21+'<br> \'</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv22) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv22+'<br> Â</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv23) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv23+'<br> ¬</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv24) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv24+'<br> ½</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv25) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv25+'<br> ¼</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv26) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv26+'<br> ³</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv27) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv27+'<br> ²</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv28) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv28+'<br> ß</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv29) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv29+'<br> ?</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv30) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv30+'<br> =</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv31) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv31+'<br> `</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv32) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv32+'<br> ´</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv33) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv33+'<br> $</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv34) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv34+'<br> §</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv35) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv35+'<br> ^</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv36) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv36+'<br> \\n</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv37) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv37+'<br> \\n</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv38) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv38+'<br> *</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv39) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv39+'<br> è</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv40) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv40+'<br> £</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv41) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv41+'<br> é</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+	// circumflexes	
+if (all == inv42) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv42+'<br> â</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv43) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv43+'<br> ê</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv44) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv44+'<br> ô</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+	// circumflexes	end
+if (all == inv45) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv45+'<br> ©</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv46) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv46+'<br> #</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv47) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv47+'<br> \\t</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv48) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv48+'<br> \\r</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv49) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv49+'<br> Ö</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv49l) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv49l+'<br> ö</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv50) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv50+'<br>; </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv51) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv51+'<br> ¢</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv52) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv52+'<br>µ</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv53) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv53+'<br> ð</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv54) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv54+'<br>  ¶</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv55) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv55+'<br>  ø</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv56) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv56+'<br>  þ</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
 	}
 	else {
 document.write(escape(all)+'<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head>'+'<h5>| '+all+' |</h5>'+'<table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
@@ -71,7 +278,7 @@ document.write(escape(all)+'<head><meta http-equiv="content-type" content="text/
 // with spaceV1 writeln is setting a whitespace between (if without query br)
 // please don`t miss the circumstance from here into and back in utf8
 // than use we not the line with charset in head u201 is utf8 encoded
-document.write("<br> %20 is space <br>");
+document.write("<br> %20 is space <br> %27 the tilde ' and escape-sequences except with backslash in translater-code<br>aritmetic signs +*-/ does nothing<br> _ and @ so they<br> €, », «, ſ, đ, ŋ, ħ,  ĸ, ł, ˝, ŧ, ←, ↓, →, ☯, ★, ♫ and ȯ small letter with dot above are with coding-fragment for unicode");
 
 </script>			
 
