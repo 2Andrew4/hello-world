@@ -1,0 +1,67 @@
+<html><head><title>Test</title>
+<!-- Authoring and fine tune website@luna-net.org
+hello my dear peole here are the before works and I miss the databank
+which should now fill this ** with key name and case and so on 
+if we use also more medias for the databank (id`s) ** -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body><form name="fm">
+<script type="text/javascript">
+
+function sgns() {
+	// ** this should be futureally the db
+var inv = "%DC"
+var inv1 = "%3a"
+var inv2 ="%20%E2%80%93%20"
+var inv3 ="%20"
+var inv4 ="%E2%80%93"
+var inv5 ="%C4"	
+// db end -> we can fill it since now with the 
+// solutions from input in browser-panel
+var all = document.fm.inp.value;
+
+if (all == inv) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #66CA3B;}</style></head><h5> Ü </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv1) {
+	document.write(':');
+	}
+if (all == inv2) {
+	document.write(' – <br>space hyphen space');
+	}
+if (all == inv3) {
+	document.write('space');
+	}
+if (all == inv4) {
+	document.write('–');
+	}
+if (all == inv5) {
+	document.write('Ä');
+	}
+	else {
+document.write(escape(all)+'<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #66CA3B;}</style></head>'+'<h5>| '+all+' |</h5>'+'<table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+}
+}
+</script>	
+
+
+<table><tr><td><form><input type="button" value="back" onClick="history.back()">
+<input type="text" value="sao" name="inp">
+<input type="button" value="Submit" onClick="sgns()">
+</form></td></tr></table>
+</table>
+<div align="right">
+<script type="text/javascript">
+
+
+// u201 is utf8 encoded
+// with spaceV1 and escape-sequence newline (no linebreak)
+// document.writeln(escape(testVI+" VI\n"));
+// with spaceV1 writeln is setting a whitespace between (if without query br)
+document.write("<br> %20 is space <br>");
+
+</script>			
+
+<!-- ² ³ ¼ ½ ¬ { [ ] } ~ ' -->
+</div>
+</form></body></html>
