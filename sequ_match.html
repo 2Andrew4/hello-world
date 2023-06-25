@@ -1,0 +1,80 @@
+<html><head><title>Test</title>
+<!-- Authoring and fine tune website@luna-net.org
+-->
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body><form name="fm">
+<script type="text/javascript">
+
+function sgns() {
+	
+var inv = "%DC"													// Ü
+var inv1 = "%3a"												// :
+var inv2 ="%20%E2%80%93%20"										// spacehyphenspace
+var inv3 ="%20"													// space
+var inv4 ="%E2%80%93"											// –
+var inv5 ="%C4"													// Ä	 
+var inv6 ="%22"													// "
+var inv7 ="%2C"													// ,
+var inv8 ="%21"													// !
+// db end -> we can fill it since now with the 
+// solutions from input in browser-panel (udate: but also this dyn-preorders to set)
+var all = document.fm.inp.value;
+
+if (all == inv) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv+'<br> Ü </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv1) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv1+'<br> : </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv2) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv2+'<br> – <br>space hyphen space </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}	
+if (all == inv3) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv3+' <br>space</h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}		
+
+if (all == inv4) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv4+'<br> – </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv5) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv5+'<br> Ä </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv6) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv6+'<br> " </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv7) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv7+'<br> , </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+if (all == inv8) {
+	document.write('<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head><h5>'+inv8+'<br> ! </h5><table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+	}
+	else {
+document.write(escape(all)+'<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><style type="text/css">h5{color : #220F69;}</style></head>'+'<h5>| '+all+' |</h5>'+'<table><tr><td><form><input type="button" value="back" onClick="history.back()"></form></td></tr></table>');
+}
+}
+</script>	
+
+
+<table><tr><td><form><input type="button" value="back" onClick="history.back()">
+<input type="text" value="sao" name="inp">
+<input type="button" value="Submit" onClick="sgns()">
+</form></td></tr></table>
+</table>
+<div align="right">
+<script type="text/javascript">
+
+
+// u201 is utf8 encoded
+// with spaceV1 and escape-sequence newline (no linebreak)
+// document.writeln(escape(testVI+" VI\n"));
+// with spaceV1 writeln is setting a whitespace between (if without query br)
+// please don`t miss the circumstance from here into and back in utf8
+// than use we not the line with charset in head u201 is utf8 encoded
+document.write("<br> %20 is space <br>");
+
+</script>			
+
+<!-- ² ³ ¼ ½ ¬ { [ ] } ~ ' -->
+</div>
+</form></body></html>
